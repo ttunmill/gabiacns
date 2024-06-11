@@ -27,7 +27,6 @@ nav .nav_bg {
 }
 nav .gnb {
     display: flex;
-    float: 1;
     justify-content: space-evenly;
 }
 nav .gnb > li {}
@@ -151,28 +150,30 @@ main .sec01 .content01_digital {
     justify-content: space-between;
     align-items: center;
 }
-main .sec01 .content01_digital li {
+main .sec01 .content01_digital li .con_g {
     position: relative;
     width: 200px;
     height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
 }
-main .sec01 .content01_digital li:first-child {background-image: url("../images/digital_1.png");}
-main .sec01 .content01_digital li:nth-child(2) {background-image: url("../images/digital_2.png");}
+main .sec01 .content01_digital li:first-child .con_g {background-image: url("../images/digital_1.png");}
+main .sec01 .content01_digital li:nth-child(2) .con_g {background-image: url("../images/digital_2.png");}
 main .sec01 .content01_digital li:nth-child(3) {
     display: flex;
-    width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 230px;
+    max-width: 230px;
     background-image: url("../images/logo_wh.png");
     background-position: center;
     background-size: 85%;
     background-color: #000;
+    background-repeat: no-repeat;
     border-radius: 50%;
 }
-main .sec01 .content01_digital li:nth-child(4) {background-image: url("../images/digital_3.png");}
-main .sec01 .content01_digital li:nth-child(5) {background-image: url("../images/digital_4.png");}
-main .sec01 .content01_digital li::before {
+main .sec01 .content01_digital li:nth-child(4) .con_g {background-image: url("../images/digital_3.png");}
+main .sec01 .content01_digital li:nth-child(5) .con_g {background-image: url("../images/digital_4.png");}
+main .sec01 .content01_digital li .con_g::before {
     position: absolute;
     display: block;
     top: 47%;
@@ -239,6 +240,11 @@ main .sec02 .content02_list .con02_right .list_btn a {
     background-color: #000;
     color: #fff;
     margin-right: 10px;
+    transition: all 0.3s;
+}
+main .sec02 .content02_list .con02_left .list_btn a:hover,
+main .sec02 .content02_list .con02_right .list_btn a:hover {
+    opacity: 0.7;
 }
 main .sec02 .content02_list .con02_right video,
 main .sec02 .content02_list .con02_left video {max-width: 80%;}
@@ -430,6 +436,7 @@ main .sec07 .txt h4 {
     margin-bottom: 20px;
     font-size: 1.875rem;
     font-weight: 700;
+    line-height: 1.2;
 }
 main .sec07 .txt a {
     font-size: 1.25rem;
@@ -549,7 +556,7 @@ footer .ft_wrap .company .company_link .select_down li button::after {
 }
 footer .ft_wrap .company .address {}
 footer .ft_wrap .company .address li {margin-bottom: 10px;}
-footer .ft_wrap .company .address li span {color: #969696;}
+footer .ft_wrap .company .address li span {color: #969696; line-height: 1.2;}
 footer .ft_wrap .company .address li span::after {
     content: "";
     display: inline-block;
@@ -562,7 +569,10 @@ footer .ft_wrap .company .address li span:last-child:after {display: none;}
 footer .ft_wrap .company .address li:last-child {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 footer .ft_wrap .company .address li:last-child img {
+    margin-bottom: 20px;
+    display: block;
     margin-right: 10px;
 }

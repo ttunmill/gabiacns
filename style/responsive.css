@@ -1,2 +1,143 @@
 /* ===============공통 */
-.pc_mode {display: none;}
+@media screen and (max-width : 960px) {
+    .sp_mode {display: block;}
+    .pc_mode {display: none;}
+    nav {justify-content: center; height: 56px;}
+    nav h1 {width: 100%; text-align: center;}
+    nav .gnb {display: none;}
+    nav .gnb_right {display: none;}
+    header {padding-top: 56px;}
+    /* con01 */
+    main .sec01 .content01_digital {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main .sec01 .content01_digital li {
+        display: flex;
+        justify-content: center;
+        width: calc(100% / 2);
+    }
+    main .sec01 .content01_digital li:nth-child(3) {display: none;}
+    /* con02 */
+    main .sec02 .content02_list .con02_left .title, main .sec02 .content02_list .con02_right .title {font-size: 1.875rem;}
+    main .sec02 .content02_list .con02_right {align-items:normal;}
+    main .sec02 > .content02_list {
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    main .sec02 > .content02_list:last-child {margin-bottom: 0;}
+    main .sec02 .content02_list .list_btn {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    /* con03 */
+    main .sec03 .swiper-container {
+        width: 300px;
+        height: 400px;
+    }
+    main .sec03 .swiper-container .swiper-wrapper .swiper-slide {padding: 20px;}
+    /* con04 */
+    main .sec04 .top h3 {font-size: 1.5rem;}
+    main .sec04 .event_list {flex-wrap: wrap;}
+    main .sec04 {padding: 100px 16px;}
+    main .sec04 .event_list li {
+        margin-bottom: 20px;
+        width: calc((100% / 3) - 20px);
+    }
+    main .sec04 .event_list li .title {font-size: 1rem;}
+    main .sec04 .event_list li .date {font-size: 0.75rem;}
+
+    /* con06 */
+    main .sec06 {padding: 100px 16px;}
+    main .sec06 .top h3 {font-size: 1.5rem;}
+    main .sec06 .library_list {
+        justify-content: normal;
+        gap: 3vw;
+    }
+    main .sec06 .library_list li {
+        width: calc((100% / 3) - 20px);
+        margin-bottom: 20px;
+    }
+    main .sec06 .library_list li .category {font-size: 0.75rem;}
+    main .sec06 .library_list li .title {font-size: 1rem;}
+    /* con07 */
+    main .sec07 {padding: 30px 16px;}
+    main .sec07 .txt h4 {font-size: 1.5rem;}
+    main .sec07 .txt a {font-size: 1rem;}
+    /* footer */
+    footer {padding: 30px 16px;}
+    footer .ft_wrap .customer_service .txt {width: 100%;}
+    footer .ft_wrap .customer_service .txt p:last-child {margin-bottom: 30px;}
+    footer .ft_wrap .customer_service {flex-direction: column;}
+    footer .ft_wrap .company .company_link {
+        margin-bottom: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    footer .ft_wrap .company .company_link .left {margin-bottom: 20px;}
+
+}
+@media screen and (max-width : 640px) {
+    header .header_swiper .swiper-wrapper .swiper-slide {
+        height: 100vh;
+        width: 100%;
+    }
+    header .header_swiper .swiper-wrapper .swiper-slide .slide_txt {
+        top: 25%;
+        left: 5%;
+    }
+    header .header_swiper .swiper-wrapper .slide1 {
+        background-image: url("../images/mobile_banner1.jpg");
+    }
+    header .header_swiper .swiper-wrapper .slide2 {
+        background-image: url("../images/mobile_banner2.jpg");
+    }
+    header .header_swiper .swiper-wrapper .swiper-slide h1 {font-size: 1.875rem;}
+    /* con02 */
+    main .sec01 h2 {font-size: 1.25rem;}
+    main .sec01 .content01_digital li a h3 {font-size: 1rem;}
+    /* con03 */
+    main .sec03 > p {font-size: 1.875rem;}
+    main .sec02 .content02_list .con02_left h3, main .sec02 .content02_list .con02_right h3 {font-size: 1.25rem;}
+    main .sec02 .content02_list .con02_left .title, main .sec02 .content02_list .con02_right .title {font-size: 1.25rem;}
+    main .sec02 .content02_list .con02_left .explan, main .sec02 .content02_list .con02_right .explan {font-size: 1rem}
+
+    /* con04 */
+    main .sec04 .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main .sec04 .top h3 {font-size: 1.25rem; margin-bottom: 10px;}
+    main .sec04 .event_list li:not(:first-child) {display: none;}
+    main .sec04 .event_list li:first-child {
+        width: 100%;
+    }
+    /* con05 */
+    main .sec05 h4 {font-size: 1.5rem;}
+    /* con06 */
+    main .sec06 .top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    main .sec06 .top h3 {font-size: 1.25rem; margin-bottom: 10px;}
+    main .sec06 .library_list li:not(:first-child) {display: none;}
+    main .sec06 .library_list li:first-child {
+        width: 100%;
+    }
+    /* con07 */
+    main .sec07 .txt h4 {font-size: 1.25rem;}
+    /* footer */
+    footer .ft_wrap .customer_service .service_list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    footer .ft_wrap .customer_service .service_list li {
+        margin-bottom: 50px;
+        align-items: center;
+        width: calc(100% / 2);
+    }
+    footer .ft_wrap .customer_service .service_list li:last-child {margin: 0;}
+}
