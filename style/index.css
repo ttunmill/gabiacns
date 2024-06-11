@@ -156,6 +156,7 @@ main .sec01 .content01_digital li .con_g {
     height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 main .sec01 .content01_digital li:first-child .con_g {background-image: url("../images/digital_1.png");}
 main .sec01 .content01_digital li:nth-child(2) .con_g {background-image: url("../images/digital_2.png");}
@@ -176,7 +177,7 @@ main .sec01 .content01_digital li:nth-child(5) .con_g {background-image: url("..
 main .sec01 .content01_digital li .con_g::before {
     position: absolute;
     display: block;
-    top: 47%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     content: '';

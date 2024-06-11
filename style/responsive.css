@@ -33,6 +33,10 @@
         justify-content: center;
         margin-bottom: 30px;
     }
+    main .sec01 .content01_digital li .con_g {
+        width: 300px;
+        height: 300px;
+    }
     /* con03 */
     main .sec03 .swiper-container {
         width: 300px;
@@ -99,6 +103,10 @@
     /* con02 */
     main .sec01 h2 {font-size: 1.25rem;}
     main .sec01 .content01_digital li a h3 {font-size: 1rem;}
+    main .sec01 .content01_digital li .con_g {
+        width: 200px;
+        height: 200px;
+    }
     /* con03 */
     main .sec03 > p {font-size: 1.875rem;}
     main .sec02 .content02_list .con02_left h3, main .sec02 .content02_list .con02_right h3 {font-size: 1.25rem;}
@@ -140,4 +148,5 @@
         width: calc(100% / 2);
     }
     footer .ft_wrap .customer_service .service_list li:last-child {margin: 0;}
+    footer .ft_wrap .ft_list {justify-content: space-between;}
 }
