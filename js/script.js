@@ -11,17 +11,23 @@ family_site.style.display = "none"
 console.log(nav_clone)
 
 // navigation
+nav_bg.style.height = "0"
 nav_bg.style.opacity = "0"
-nav_bg.style.transition = "all 0.3s"
+nav_bg.style.transition = "opacity 0.3s"
+for(var i of sub) {i.style.height = "0"}
 for(var i of sub) {i.style.opacity = "0"}
-for(var i of sub) {i.style.transition = "all 0.3s"}
+for(var i of sub) {i.style.transition = "opacity 0.3s"}
 
 nav.addEventListener("mouseover", () => {
+    nav_bg.style.height = "200px"
     nav_bg.style.opacity = 1;
+    for(var i of sub) {i.style.height = "max-content"}
     for(var i of sub) {i.style.opacity = "1"}
 })
 nav.addEventListener("mouseout", () => {
+    nav_bg.style.height = "0"
     nav_bg.style.opacity = 0;
+    for(var i of sub) {i.style.height = "0"}
     for(var i of sub) {i.style.opacity = "0"}
 })
 

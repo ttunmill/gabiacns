@@ -13,6 +13,7 @@ nav {
     padding: 0 20px;
     height: 80px;
     background-color: #fff;
+    border-bottom: 1px solid #eee;
     z-index: 999;
 }
 nav h1 a {display: inline-block;}
@@ -44,6 +45,7 @@ nav .gnb li .sub {
     position: absolute;
     top: 90px;
     text-align: center;
+    overflow: hidden;
 }
 nav .gnb li .sub li {
     width: 120px;
