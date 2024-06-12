@@ -3,6 +3,10 @@
 main section {padding-left: 16px !important; padding-right: 16px !important;}
 footer {padding-left: 16px !important; padding-right: 16px !important;}
 main .sec01 .content01_digital li:nth-child(3) {display: none;}
+main .sec01 .content01_digital li .con_g {
+    width: 230px;
+    height: 230px;
+}
 }
 @media screen and (max-width : 960px) {
     .sp_mode {display: block;}
