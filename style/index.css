@@ -256,7 +256,9 @@ main .sec01 .content01_digital li .con_g {
     background-position: center;
     transition: all 0.3s;
 }
-main .sec01 .content01_digital li .con_g:hover {background-size: 90%;}
+main .sec01 .content01_digital li .con_g:hover {
+    background-size: 90%;
+}
 main .sec01 .content01_digital li .con_g:hover::before {
     background-color: #fff;
     width: 100%;

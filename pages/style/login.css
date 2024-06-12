@@ -1,0 +1,140 @@
+section {
+    margin: 80px auto;
+    max-width: 480px;
+}
+.wrap {
+    width: 100%;
+}
+.wrap h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wrap #login_form .user_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.wrap #login_form .user_login input {
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid #e3e6e9;
+}
+.wrap #login_form .user_login input:first-child {border-bottom: 0;}
+.wrap #login_form .user_security {display: flex;}
+.wrap #login_form .user_security li {flex: 1}
+.wrap #login_form .user_security li img {
+    display: block;
+    width: 100%;
+}
+.wrap #login_form .user_security li:last-child {
+    display: flex;
+    flex-direction: column;
+}
+.wrap #login_form .user_security li button {
+    flex: 1;
+    border: 1px solid #e3e6e9;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-bottom: 0;
+}
+.wrap #login_form .user_security li button:first-child {background-image: url("../images/lbd_reload_icon.gif");}
+.wrap #login_form .user_security li button:last-child {background-image: url("../images/lbd_sound_icon.gif");}
+.wrap #login_form .user_security_txt {margin-bottom: 20px;}
+.wrap #login_form .user_security_txt input {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #e3e6e9;
+}
+.wrap #login_form .user_reaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #969696;
+}
+.wrap #login_form .user_reaction .user_check_g {}
+.wrap #login_form .user_reaction .user_check_g input[name *= user]{display: none;}
+.wrap #login_form .user_reaction .user_check_g label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wrap #login_form .user_reaction .user_check_g label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 1px solid #969696;
+    margin-right: 12px;
+}
+.wrap #login_form .user_reaction .user_check_g label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: 2px solid #969696;
+    border-top: 0;
+    border-left: 0;
+    left: 9px;
+    top: 7px;
+}
+
+.wrap #login_form .user_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.wrap #login_form .user_reaction .user_find {display: flex;}
+.wrap #login_form .user_reaction .user_find a {
+    display: flex;
+    align-items: center;
+    color: #969696;
+}
+.wrap #login_form .user_reaction .user_find a::after {
+    content: "";
+    display: inline-block;
+    margin: 0 10px;
+    width: 1px;
+    height: 12px;
+    background-color: #969696;
+}
+.wrap #login_form .user_reaction .user_find a:last-child:after {display: none;}
+.wrap #login_form .user_btn button[type = submit] {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 56px;
+    background-color: #0042CF;
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+}
+.wrap #login_form .user_btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    color: #0042CF;
+    border: 1px solid rgba(0, 66, 207, 0.2);
+}
+.wrap .sns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.wrap .sns li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap .ad a img {width: 100%;}

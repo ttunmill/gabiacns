@@ -131,14 +131,11 @@ top_btn.addEventListener("click", () => {
 
 let last_scroll = 0;
 let $top_btn = $(".scroll_top_btn")
-console.log($top_btn)
 $(window).on("scroll", function() {
     let scroll_top = $(this).scrollTop();
     if(scroll_top > last_scroll) {
-        console.log("스크롤 다운")
         $top_btn.css("bottom", "-10%")
     } else {
-        console.log("스크롤 업")
         $top_btn.css("bottom", "2%")
     }
     last_scroll = scroll_top;
