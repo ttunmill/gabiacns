@@ -1,9 +1,9 @@
 .move_up {
-    animation: move_up 0.3s both;
+    animation: move_up 1s both;
 }
 @keyframes move_up {
     0% {
-        transform: translateY(20px);
+        transform: translateY(30px);
         opacity: 0;
     }
     100% {

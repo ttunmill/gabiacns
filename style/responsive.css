@@ -1,4 +1,9 @@
 /* ===============공통 */
+@media screen and (max-width : 1180px) {
+main section {padding-left: 16px !important; padding-right: 16px !important;}
+footer {padding-left: 16px !important; padding-right: 16px !important;}
+main .sec01 .content01_digital li:nth-child(3) {display: none;}
+}
 @media screen and (max-width : 960px) {
     .sp_mode {display: block;}
     .pc_mode {display: none;}
@@ -46,6 +51,10 @@
     main .sec01 .content01_digital li .con_g {
         width: 300px;
         height: 300px;
+    }
+    main .sec01 .content01_digital li .con_g::before {
+        width: 50px;
+        height: 50px;
     }
     /* con03 */
     main .sec03 .swiper-container {
@@ -110,12 +119,21 @@
         background-image: url("../images/mobile_banner2.jpg");
     }
     header .header_swiper .swiper-wrapper .swiper-slide h1 {font-size: 1.875rem;}
+    /* con01 */
+    main .sec01 .content01_digital li h3 {
+        font-size: 0.75rem;
+        bottom: 25%;
+    }
     /* con02 */
     main .sec01 h2 {font-size: 1.25rem;}
     main .sec01 .content01_digital li a h3 {font-size: 1rem;}
     main .sec01 .content01_digital li .con_g {
         width: 200px;
         height: 200px;
+    }
+    main .sec01 .content01_digital li .con_g::before {
+        width: 40px;
+        height: 40px;
     }
     /* con03 */
     main .sec03 > p {font-size: 1.875rem;}

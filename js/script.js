@@ -2,17 +2,15 @@ let sign_up = document.querySelector(".sign_up_btn")
 let nav_bg  = document.querySelector(".nav_bg")
 let sub = document.querySelectorAll(".sub")
 let family_site = document.querySelector(".family_site")
+let family_btn = document.querySelector(".select_down > li > button")
 let gnb = document.querySelector(".gnb")
 let nav = document.querySelector("nav")
 let nav_clone = nav.cloneNode(true)
 let m_menu = document.querySelector(".m_menu")
+let top_btn = document.querySelector(".scroll_top_btn")
 m_menu.appendChild(nav_clone)
 
-
-
 sign_up.style.display = "none"
-family_site.style.display = "none"
-
 
 // p-navigation
 nav_bg.style.height = "0"
@@ -61,20 +59,17 @@ m_gnb_li.forEach((i, j) => {
     })
 });
 
-
-
-
-
 // swiper plugin
 const swiper1 = new Swiper(".header_swiper", {
     autoplay : {delay : 5000},
     loop : true,
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true
+        el: /* ".swiper-pagination", */'.header_swiper .swiper-pagination',
+        clickable: true,
+        type: 'fraction',
     },
-    navigation: {
-        nextEl: ".swiper-button-next", 
+    navigation: {
+        nextEl:".swiper-button-next", 
         prevEl:".swiper-button-prev"
     },
 })
@@ -85,13 +80,15 @@ const swiper2 = new Swiper(".sec03_swiper", {
 })
 
 // scrollTrigger plugin
-// 
-// for(let i of move_up) {
-//     ScrollTrigger.create({
-//         trigger : i,
-//         onEnter : () => {i.classList.add("move_up")}
-//     })
-// }
+//for문으로 대응
+let ani = gsap.utils.toArray(".ani") 
+for(let i of ani) {
+    ScrollTrigger.create({
+        trigger : i,
+        onEnter : () => {i.classList.add("move_up")},
+        scrub : true,
+    })
+}
 
 // window size responsive
 window.onload = () => {
@@ -116,3 +113,33 @@ window.onresize = function(event){
     }
 }
 
+// footer family site btn
+let flag = false;
+family_btn.addEventListener("click", () => {
+    flag = !flag
+    if(flag == true) {
+        family_site.style.opacity = 1
+    } else {
+        family_site.style.opacity = 0
+    }
+})
+
+// scroll top btn
+top_btn.addEventListener("click", () => {
+    window.scrollTo(0, 0)
+})
+
+let last_scroll = 0;
+let $top_btn = $(".scroll_top_btn")
+console.log($top_btn)
+$(window).on("scroll", function() {
+    let scroll_top = $(this).scrollTop();
+    if(scroll_top > last_scroll) {
+        console.log("스크롤 다운")
+        $top_btn.css("bottom", "-10%")
+    } else {
+        console.log("스크롤 업")
+        $top_btn.css("bottom", "2%")
+    }
+    last_scroll = scroll_top;
+})
