@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <!-- <link rel="stylesheet" href="./style/animation.css"> -->
+    <link rel="stylesheet" href="./style/swiper_design.css">
     <!-- plugin css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -14,12 +16,18 @@
     <!-- plugin js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <nav>
         <div class="nav_bg"></div>
-        <div class="m_menu sp_mode"><a href="#"><img src="./images/hambuergur_menu.svg" alt=""></a></div>
-        <h1><a href="./index.html"><img src="./images/logo.svg" alt="gabia.commerce"></a></h1>
+        <div class="gnb_left">
+            <div class="m_menu sp_mode">
+                <a href="#"><img src="./images/hambuergur_menu.svg" alt=""></a>
+            </div>
+            <h1><a href="./index.html"><img src="./images/logo.svg" alt="gabia.commerce"></a></h1>
+        </div>
         <ul class="gnb">
             <li>
                 <a href="#">쇼핑몰 창업</a>
@@ -87,17 +95,20 @@
                         <a href="#">자세히 보기</a>
                     </div>
                 </div>
-                <!--필요 시 사용(선택)-->
-                <!-- <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-scrollbar"></div> -->
             </div>
+            <!--필요 시 사용(선택)-->
+            
+            <div class="swiper_navigation">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </header>
     <main>       
         <section class="sec01">
-            <h2>가비아커머스와 함께하는 즐거운 디지털 세상<br>지금 바로 경험해보세요</h2>
+            <h2 class="move_up">가비아커머스와 함께하는 즐거운 디지털 세상<br>지금 바로 경험해보세요</h2>
             <ul class="content01_digital">
                 <li>
                     <div class="con_g">
@@ -135,9 +146,9 @@
                 <div class="content02_list">
                     <div class="con02_left">
                         <div class="con02_lay">
-                            <h3>쇼핑몰 창업</h3>
-                            <p class="title">간편하고 자유롭게<br>나만의 쇼핑몰을 시작하세요</p>
-                            <p class="explan">초간편 쇼핑몰 제작부터 맞춤 제작 쇼핑몰까지</p>
+                            <h3 class="move_up">쇼핑몰 창업</h3>
+                            <p class="title move_up">간편하고 자유롭게<br>나만의 쇼핑몰을 시작하세요</p>
+                            <p class="explan move_up">초간편 쇼핑몰 제작부터 맞춤 제작 쇼핑몰까지</p>
                             <div class="list_btn">
                                 <a href="#">초간편 쇼핑몰</a>
                                 <a href="#">독립쇼핑몰</a>
@@ -231,7 +242,7 @@
         <section class="sec04">
             <div class="top">
                 <h3>가비아커머스 이벤트</h3>
-                <a href="#">전체보기 ></a>
+                <a href="#" class="arrow">전체보기</a>
             </div>
             <ul class="event_list">
                 <li><a href="#">
@@ -266,7 +277,7 @@
         <section class="sec06">
             <div class="top">
                 <h3>라이브러리에서 다양한 정보를 알아보세요</h3>
-                <a href="#">전체보기 ></a>
+                <a href="#" class="arrow">전체보기</a>
             </div>
             <ul class="library_list">
                 <li><a href="#">
@@ -441,5 +452,20 @@
             </div>
         </div>
     </footer>
+    <script defer>
+        gsap.registerPlugin(ScrollTrigger)
+        let move_up = document.querySelectorAll(".move_up")
+        gsap.to(".move_up", {
+            scrollTrigger : ".move_up",
+            duration : 1, //1초
+            y : 0,
+            delay : 1,
+            borderRadius : 50,
+            opacity : 1,
+            scrub: true,
+            yoyo: true,
+            start: "top top",
+        })
+    </script>
 </body>
 </html> 

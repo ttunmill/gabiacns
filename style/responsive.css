@@ -2,11 +2,21 @@
 @media screen and (max-width : 960px) {
     .sp_mode {display: block;}
     .pc_mode {display: none;}
-    nav {justify-content: center; height: 56px;}
+    nav {
+        padding: 0 16px;
+        justify-content: center; 
+        height: 56px;
+    }
     nav h1 {width: 100%; text-align: center;}
-    nav .gnb {display: none;}
+    .gnb_left {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
     nav .gnb_right {display: none;}
     header {padding-top: 56px;}
+    /* m-nav */
+
     /* con01 */
     main .sec01 .content01_digital {
         justify-content: center;
