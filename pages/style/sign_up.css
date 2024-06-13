@@ -1,0 +1,114 @@
+/* 공통 */
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+.wrap {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 60px;
+    border: 1px solid #e5e5e5;
+}
+.wrap h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.wrap h3 {
+    font-size: 1.25rem;
+    margin: 50px 0 20px;
+}
+ul li .input_lay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+ul li .input_lay > span:first-child {
+    display: inline-block;
+    width: 25%;
+    line-height: 60px;
+}
+ul li .input_lay > input {
+    width: 75%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #969696;
+}
+ul li .input_lay .input_design input:hover,
+ul li .input_lay > input:hover {
+    border-color: #3090d6;
+}
+ul li .input_lay .input_design {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+ul li .input_lay .input_design input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #969696;
+}
+ul li .input_lay .input_design span[class$=fail] {
+    margin-top: 10px;
+    color: #db7c34;
+}
+/* (공통) 이메일 input 디자인 */
+ul li .input_lay .email_design {
+    display: flex;
+    width: 75%;
+    border-bottom: 1px solid #969696;
+}
+ul li .input_lay .email_design:hover {
+    border-color: #3090d6;
+}
+ul li .input_lay .email_design input {
+    width: 100%;
+    display: inline-block;
+    outline: none;
+    height: 60px;
+    border: 0;
+}
+ul li .input_lay .email_design input:last-child {padding-left: 5px;}
+ul li .input_lay .email_design span {
+    display: inline-block;
+    line-height: 59px;
+}
+/* 회원 유형 라디오박스 */
+.info li:first-child .input_lay {align-items: center;}
+.info li:first-child .input_lay .info_cate {
+    width: 75%;
+    display: flex;
+}
+.info li:first-child .input_lay .info_cate button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: background-color 0.3s;
+}
+.info li:first-child .input_lay .info_cate button:first-child {border-radius: 5px 0 0 5px;}
+.info li:first-child .input_lay .info_cate button:last-child {border-radius: 0 5px 5px 0;}
+.info li:first-child .input_lay .info_cate button:hover {background-color: #daedfc;}
+/* 약관 동의 */
+.terms_of_service {}
+.terms_of_service li {
+    height: 40px;
+}
+.user_agree_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_agree_content .user_agree_g input[required] ~ span {color: #3090d6;}
+.move_link_btn a,
+.txt_toggle_btn a {
+    color: #969696;
+}

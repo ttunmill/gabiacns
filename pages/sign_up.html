@@ -19,24 +19,165 @@
                 <h3>로그인 정보</h3>
                 <ul class="login_info">
                     <li>
-                        <span>아이디</span>
-                        <input type="text" id="user_id" placeholder="6~16자 / 영문 소문자,숫자 사용 가능" required>
-                        <span class="id_fail"></span>
+                        <div class="input_lay">
+                            <span>아이디</span>
+                            <div class="input_design">
+                                <input type="text" id="user_id" placeholder="6~16자 / 영문 소문자,숫자 사용 가능" required>
+                                <span class="id_fail"></span>
+                            </div>
+                        </div>
+                        
                     </li>
                     <li>
-                        <span>비밀번호</span>
-                        <input type="password" id="user_pwd" placeholder="8~16자 / 문자,숫자,특수 문자 모두 혼용">
-                        <span class="pwd_fail"></span>
-                        <span class="pwd_rule"></span>
+                        <div class="input_lay">
+                            <span>비밀번호</span>
+                            <div class="input_design">
+                                <input type="password" id="user_pwd" placeholder="8~16자 / 문자,숫자,특수 문자 모두 혼용">
+                                <span class="pwd_fail"></span>
+                                <span class="pwd_rule"></span>
+                            </div>
+                        </div>
+                        
                     </li>
                     <li>
-                        <span>비밀번호 확인</span>
-                        <input type="password" id="user_pwd_chk" placeholder="비밀번호를 다시 입력해 주세요">
-                        <span class="pwd_chk_fail"></span>
+                        <div class="input_lay">
+                            <span>비밀번호 확인</span>
+                            <div class="input_design">
+                                <input type="password" id="user_pwd_chk" placeholder="비밀번호를 다시 입력해 주세요">
+                                <span class="pwd_chk_fail"></span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <h3>회원 정보</h3>
-                
+                <ul class="info">
+                    <li>
+                        <div class="input_lay">
+                            <span>회원 유형</span>
+                            <div class="info_cate">
+                                <button type="button">개인</button>
+                                <button type="button">기업</button>
+                            </div>
+                        </div>
+                        <ul class="individual_chk">
+                            <li>
+                                <div class="input_lay">
+                                    <span>이름</span>
+                                    <input type="text" id="user_name" placeholder="실명을 입력해 주세요.">
+                                </div>
+                                <span class="name_fail"></span>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>휴대전화</span>
+                                    <input type="text" id="user_phone" placeholder="숫자만 입력해 주세요.">
+                                </div>
+                                <span class="phone_fail"></span>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>이메일</span>
+                                    <div class="email_design">
+                                        <input type="text" id="user_email" placeholder="이메일">
+                                        <span>@</span>
+                                        <input type="text" id="user_email" placeholder="직접 입력">
+                                    </div>
+                                </div>
+                                <span class="email_fail"></span>
+                            </li>
+                        </ul>
+                        <ul class="enterprise_chk">
+                            <li>
+                                <div class="input_lay">
+                                    <span>기업명</span>
+                                    <input type="text" id="lnc_name" placeholder="기업명을 입력해 주세요.">
+                                </div>
+                                <span class="lnc_name_fail"></span>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>사업자등록번호</span>
+                                    <input type="text" id="lnc_num" placeholder="숫자만 입력해 주세요.">
+                                </div>
+                                <span class="lnc_num_fail"></span>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>담당자명</span>
+                                    <input type="text" id="lnc_poc" placeholder="실명을 입력해주세요.">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>휴대전화</span>
+                                    <input type="text" id="lnc_phone" placeholder="숫자만 입력해주세요.">
+                                </div>
+                                <span class="lnc_phone_fail"></span>
+                            </li>
+                            <li>
+                                <div class="input_lay">
+                                    <span>이메일</span>
+                                    <div class="email_design">
+                                        <input type="text" id="user_email" placeholder="이메일">
+                                        <span>@</span>
+                                        <input type="text" id="user_email" placeholder="직접 입력">
+                                    </div>
+                                </div>
+                                <span class="email_fail"></span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>가입 약관 동의</h3>
+                <ul class="terms_of_service">
+                    <li>
+                        <input type="checkbox" name="select_all" id="select_all">
+                        <label for="select_all">모든 약관에 동의합니다.</label>
+                    </li>
+                    <li>
+                        <div class="user_agree_content">
+                            <div class="user_agree_g">
+                                <input type="checkbox" name="user_agree01" id="user_agree01" required>
+                                <label for="user_agree01">가비아 이용 약관에 동의합니다.</label>
+                                <span>(필수)</span>
+                            </div>
+                            <div class="move_link_btn">
+                                <a href="#">상세 보기</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="user_agree_content">
+                            <div class="user_agree_g">
+                                <input type="checkbox" name="user_agree02" id="user_agree02" required>
+                                <label for="user_agree02">개인정보 수집 및 이용에 동의합니다.</label>
+                                <span>(필수)</span>
+                            </div>
+                            <div class="txt_toggle_btn">
+                                <a href="#">상세 보기</a>
+                            </div>
+                        </div>
+                        <div class="agree_txt">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user_agree_content">
+                            <div class="user_agree_g">
+                                <input type="checkbox" name="user_agree03" id="user_agree03">
+                                <label for="user_agree03">마케팅 활용 및 광고성 정보 수신에 동의합니다.</label>
+                                <span>(선택)</span>
+                            </div>
+                            <div class="txt_toggle_btn">
+                                <a href="#">상세 보기</a>
+                            </div>
+                        </div>
+                        <div class="agree_txt">
+
+                        </div>
+                    </li>
+                </ul>
+                <p>14세 미만은 회원 가입이 제한됩니다.</p>
+                <p><button type="submit">가입하기</button></p>
             </form>
         </div>
     </div>
