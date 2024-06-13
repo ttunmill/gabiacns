@@ -22,7 +22,7 @@
                         <div class="input_lay">
                             <span>아이디</span>
                             <div class="input_design">
-                                <input type="text" id="user_id" placeholder="6~16자 / 영문 소문자,숫자 사용 가능" required>
+                                <input type="text" id="user_id" placeholder="6~16자 / 영문 소문자,숫자 사용 가능" required autofocus>
                                 <span class="id_fail"></span>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                         <div class="input_lay">
                             <span>비밀번호</span>
                             <div class="input_design">
-                                <input type="password" id="user_pwd" placeholder="8~16자 / 문자,숫자,특수 문자 모두 혼용">
+                                <input type="password" id="user_pwd" placeholder="8~16자 / 문자,숫자,특수 문자 모두 혼용" required>
                                 <span class="pwd_fail"></span>
                                 <span class="pwd_rule"></span>
                             </div>
@@ -43,7 +43,7 @@
                         <div class="input_lay">
                             <span>비밀번호 확인</span>
                             <div class="input_design">
-                                <input type="password" id="user_pwd_chk" placeholder="비밀번호를 다시 입력해 주세요">
+                                <input type="password" id="user_pwd_chk" placeholder="비밀번호를 다시 입력해 주세요" required>
                                 <span class="pwd_chk_fail"></span>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                                 <span>(필수)</span>
                             </div>
                             <div class="move_link_btn">
-                                <a href="#">상세 보기</a>
+                                <a href="#">상세 보기</a><span></span>
                             </div>
                     </li>
                     <li>
@@ -153,11 +153,12 @@
                                 <span>(필수)</span>
                             </div>
                             <div class="txt_toggle_btn">
-                                <a href="#">상세 보기</a>
+                                <a href="#">상세 보기</a><span></span>
                             </div>
                         </div>
                         <div class="agree_txt">
-
+                            <p>가비아는 회원서비스 처리를 위하여 고객으로부터 최소한의 필수정보를 수집하며, 제공한 모든 개인정보는 별도의 동의가 없는 한 해당 목적 이외의 다른 목적으로 사용하지 않습니다.</p>
+                            <ul><li><p>• 수집항목</p><ol><div class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>1. 최초 회원가입 시 회원 식별 및 최적화된 서비스 제공을 위해 아래와 같은 정보를 수집합니다.</p><p>- 필수 항목: 아이디, 비밀번호, 이름/기업명, 사업자등록번호, 담당자명(기업회원의 경우), 이메일 주소, 휴대전화번호, CI</p></div><div class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>2. 소셜 회원가입 시 SNS 연결 및 원활한 서비스 제공을 위해 아래와 같은 정보를 수집합니다.</p><p>- 필수 수집 항목: 이름, 소셜 이메일 주소, 소셜 고유 키 값</p><p>- 선택 수집 항목: [카카오] 프로필 정보(프로필 사진)</p><p>* 선택 수집 항목은 정보를 제공받으나 저장하지 않습니다.</p></div></ol></li><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>• 수집 및 목적</p><ol><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>1. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산</p><p>콘텐츠 제공, 물품배송 또는 청구서 등 발송, 본인 인증 및 구매, 요금 결제, 요금추심</p></li><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>2. 회원 관리</p><p>회원제 서비스 이용에 따른 본인 확인, 개인식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 가입 및 가입횟수 제한, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달</p></li></ol></li><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale)); font-size: calc(1.0625rem * var(--mantine-scale)); font-weight: 500;"><p>• 보유 및 이용기간</p><p>원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체없이 복구할 수 없는 방법으로 파기합니다. 단, 법령에 따른 보존 혹은 다음의 정보에 대해서는 아래의 이유로 해당 기간 동안 보존합니다.</p><ol><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>1. 회사의 내부 방침에 의하여 일정기간 정보를 보관하고, 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.</p><p>ㆍ보존 항목 : ID, 주문처리 정보 </p><p>ㆍ보존 이유 : 부정 이용 방지, 서비스 이용 기간 및 요금 관련 분쟁 해결</p><p>ㆍ보존 기간 : 회원 탈퇴 완료일로부터 1년</p></li><li class="" style="margin-top: calc(1.5625rem * var(--mantine-scale));"><p>고객님은 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 개인정보 수집 및 이용 동의를 거부하실 경우, 회원 등록을 하실 수 없고, 이에 따른 회원제 서비스 이용이 불가할 수 있습니다.</p></li></ol></li></ul>
                         </div>
                     </li>
                     <li>
@@ -168,15 +169,51 @@
                                 <span>(선택)</span>
                             </div>
                             <div class="txt_toggle_btn">
-                                <a href="#">상세 보기</a>
+                                <a href="#">상세 보기</a><span></span>
                             </div>
                         </div>
                         <div class="agree_txt">
-
+                            <table>
+                                <colgroup>
+                                    <col style="width: 33.333%;">
+                                    <col style="width: 33.333%;">
+                                    <col style="width: 33.333%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <p>수집 항목</p>
+                                        </th>
+                                        <th>
+                                            <p>수집 및 이용 목적</p>
+                                        </th>
+                                        <th>
+                                            <p>이용 기간</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>필수 동의 사항에서 개인 정보 수집/이용에 동의한 모든 항목 및 이를 조합하여 생성된 정보</td>
+                                        <td>신규 서비스 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속 빈도 파악, 회원의 서비스 이용에 대한 통계 및 이벤트 등 광고성 정보 전달</td>
+                                        <td>동의 철회 시 또는 광고성 정보 수신 동의일로부터 2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>쿠키, 기기/브라우저 관련 데이터, IP 주소, 사이트/앱 활동</td>
+                                        <td>잠재고객 생성 및 리마케팅 목적의 광고 제공</td>
+                                        <td>정보수집일로부터 38개월</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <p class style="color: rgb(48, 144, 215);">회원은 선택 항목의 개인정보 수집 및 이용 동의를 거부할 수 있으며, 거부하더라도 회원 가입 및 서비스 이용에는 제한이 없습니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </li>
                 </ul>
-                <p>14세 미만은 회원 가입이 제한됩니다.</p>
+                <p class="txt">14세 미만은 회원 가입이 제한됩니다.</p>
                 <p><button type="submit">가입하기</button></p>
             </form>
         </div>

@@ -98,17 +98,183 @@ ul li .input_lay .email_design span {
 .info li:first-child .input_lay .info_cate button:last-child {border-radius: 0 5px 5px 0;}
 .info li:first-child .input_lay .info_cate button:hover {background-color: #daedfc;}
 /* 약관 동의 */
-.terms_of_service {}
-.terms_of_service li {
-    height: 40px;
+.terms_of_service {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
 }
+.terms_of_service li {line-height: 40px;}
+.terms_of_service li .agree_txt {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 0;
+    transition: height 0.3s;
+}
+.terms_of_service li .agree_txt table {
+    display: table;
+    width: 100%;
+    border-top: 2px solid #6f6f6f;
+    border-bottom: 1px solid #6f6f6f;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table th {
+    background-color: #f9fafc;
+    font-weight: 400;
+}
+table td, table th {
+    padding: 10px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 0.875rem;
+}
+table thead th:last-child,
+table td:last-child {
+    border-right: 0;
+}
+
+.terms_of_service li .agree_txt p {
+    font-size: 0.875rem;
+    line-height: 1.3;
+}
+.terms_of_service li .agree_txt ul {margin-top: 20px;}
+.terms_of_service li .agree_txt ul li > * {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+.terms_of_service li input[type = checkbox] {display: none;}
+.terms_of_service li input[type = checkbox] + label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.terms_of_service li input[type = checkbox] + label::before {
+    content: "";
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.terms_of_service li input[type = checkbox] + label::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 7px;
+    border: 2px solid #fff;
+    transform: rotate(45deg) translate(-50%);
+    border-top: 0;
+    border-left: 0;
+    left: 10px;
+    opacity: 0;
+}
+.terms_of_service li input[type = checkbox]:checked + label::before {background-color: #3090d6;}
+.terms_of_service li input[type = checkbox]:checked + label::after {opacity: 1;}
 .user_agree_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 40px;
+}
+.user_agree_content .user_agree_g {
+    display: flex;
+    align-items: center;
 }
 .user_agree_content .user_agree_g input[required] ~ span {color: #3090d6;}
+.user_agree_content .user_agree_g input ~ span {color: #969696;}
+.move_link_btn {
+    display: flex;
+    align-items: center;
+}
 .move_link_btn a,
 .txt_toggle_btn a {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
     color: #969696;
+    margin-right: 5px;
+}
+.move_link_btn span::after {
+    content: "";
+    display: block;
+    background-image: url("../images/sign_up/right-arrow.png");
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    opacity: 0.2;
+}
+.txt_toggle_btn {
+    display: flex;
+    align-items: center;
+}
+.txt_toggle_btn span::after {
+    content: "";
+    display: block;
+    background-image: url("../images/sign_up/down-arrow.png");
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    opacity: 0.2;
+}
+#user_info_from .txt {
+    font-size: 0.85rem;
+    color: #969696;
+    margin: 20px 0;
+}
+#user_info_from > p > button[type = submit] {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    color: #969696;
+    background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 768px) {
+    * {font-size: 0.875rem;}
+    .wrap {
+        max-width: 100%;
+        padding: 40px 16px;
+    }
+    h1 {margin: 20px 0;}
+    .wrap h2 {
+        font-size: 1.25rem;
+    }
+    .wrap h3 {
+        display: none;
+        font-size: 0.875rem;
+    }
+    ul li .input_lay {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    ul li .input_lay > span:first-child {line-height:normal}
+    ul li .input_lay .input_design {width: 100%;}
+    ul li .input_lay .input_design input {height: 40px;}
+    .info li:first-child .input_lay {align-items: flex-start;}
+    .info li:first-child .input_lay .info_cate {width: 100%;}
+    .info li:first-child .input_lay .info_cate button {
+        margin-top: 10px;
+        height: 40px;
+    }
+    ul li .input_lay > input {width: 100%; height: 40px;}
+    ul li .input_lay .email_design {width: 100%;}
+    .terms_of_service li:nth-child(2) .user_agree_content{
+        margin-bottom: 10px;
+    }
+    .terms_of_service li .user_agree_content{
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+    }
+    .user_agree_content .user_agree_g {margin-bottom: 10px;}
+    ul li .input_lay .email_design input {
+        height: 40px;
+    }
+    ul li .input_lay .email_design span {line-height: 40px;}
+    .terms_of_service li .agree_txt {
+        margin-bottom: 10px;
+    }
 }
