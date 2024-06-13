@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.75" height="18" viewBox="0 0 41.75 18">
+  <g id="icon_floting" transform="translate(-1824.291 -1035)">
+    <g id="그룹_149733" data-name="그룹 149733" transform="translate(3 1)">
+      <path id="패스_142946" data-name="패스 142946" d="M-18484.838-17271.006h10" transform="translate(20307.129 18309.006)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="패스_142947" data-name="패스 142947" d="M-18484.838-17271.006h5.209" transform="translate(20311.918 18314.006)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="패스_142948" data-name="패스 142948" d="M-18484.838-17271.006h2.6" transform="translate(20314.523 18319.006)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <rect id="사각형_50349" data-name="사각형 50349" width="27.041" height="8.89" transform="translate(1839 1043)" fill="none"/>
+    <g id="그룹_149735" data-name="그룹 149735" transform="translate(2)">
+      <rect id="사각형_50348" data-name="사각형 50348" width="25" height="18" rx="2" transform="translate(1837 1035)" fill="#fff"/>
+      <path id="패스_142949" data-name="패스 142949" d="M13.133,10.018a1.578,1.578,0,0,1-.923-.306L.07,1.234.567.27l12.14,8.476a.711.711,0,0,0,.851,0L25.362.27l.5.964-11.8,8.478a1.578,1.578,0,0,1-.923.306" transform="translate(1836.49 1036.096)" fill="#0455af" stroke="#0455af" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

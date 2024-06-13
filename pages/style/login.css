@@ -1,18 +1,28 @@
+/* =============공통 */
+input {outline: none;}
+.wrap #login_form .user_login input:focus,
+.wrap #login_form .user_security_txt input:focus {border: 1px solid #0042CF !important;}
+.wrap #login_form .user_security_txt #user_id:focus + #user_pwd {
+    margin-top: 10px;
+}
+
+/* =============content start */
 section {
     margin: 80px auto;
     max-width: 480px;
 }
-.wrap {
-    width: 100%;
-}
+.wrap {width: 100%;}
 .wrap h1 {
+    width: 250px;
+    margin: 0 auto;
     margin-bottom: 20px;
-    text-align: center;
 }
+.wrap h1 a img {width: 100%;}
 .wrap #login_form .user_login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-collapse: collapse;
     margin-bottom: 20px;
 }
 .wrap #login_form .user_login input {
@@ -21,10 +31,11 @@ section {
     padding: 16px;
     border: 1px solid #e3e6e9;
 }
-.wrap #login_form .user_login input:first-child {border-bottom: 0;}
+.wrap #login_form .user_login input:last-child{border-top: 0;}
 .wrap #login_form .user_security {display: flex;}
 .wrap #login_form .user_security li {flex: 1}
 .wrap #login_form .user_security li img {
+    margin-bottom: -1px;
     display: block;
     width: 100%;
 }
@@ -33,15 +44,15 @@ section {
     flex-direction: column;
 }
 .wrap #login_form .user_security li button {
+    margin-bottom: -1px;
     flex: 1;
     border: 1px solid #e3e6e9;
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: left;
-    border-bottom: 0;
 }
-.wrap #login_form .user_security li button:first-child {background-image: url("../images/lbd_reload_icon.gif");}
-.wrap #login_form .user_security li button:last-child {background-image: url("../images/lbd_sound_icon.gif");}
+.wrap #login_form .user_security li button:first-child {background-image: url("../images/login/lbd_reload_icon.gif");}
+.wrap #login_form .user_security li button:last-child {background-image: url("../images/login/lbd_sound_icon.gif");}
 .wrap #login_form .user_security_txt {margin-bottom: 20px;}
 .wrap #login_form .user_security_txt input {
     display: block;
@@ -68,22 +79,27 @@ section {
     content: "";
     width: 24px;
     height: 24px;
-    border: 1px solid #969696;
-    margin-right: 12px;
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s;
 }
 .wrap #login_form .user_reaction .user_check_g label::after {
     content: "";
     position: absolute;
     display: block;
-    width: 6px;
-    height: 8px;
-    transform: rotate(45deg);
+    width: 5px;
+    height: 7px;
+    transform: rotate(45deg) translateY(-50%);
+    left: 6px;
+    top: 40%;
     border: 2px solid #969696;
     border-top: 0;
     border-left: 0;
-    left: 9px;
-    top: 7px;
+    transition: all 0.3s;
 }
+.wrap #login_form .user_reaction .user_check_g input[name *= user]:checked + label::before {background-color: #0042CF;}
+.wrap #login_form .user_reaction .user_check_g input[name *= user]:checked + label::after {border-color: #fff;}
 
 .wrap #login_form .user_btn {
     display: flex;
@@ -97,6 +113,7 @@ section {
 .wrap #login_form .user_reaction .user_find a {
     display: flex;
     align-items: center;
+    font-size: 0.875rem;
     color: #969696;
 }
 .wrap #login_form .user_reaction .user_find a::after {
@@ -104,7 +121,7 @@ section {
     display: inline-block;
     margin: 0 10px;
     width: 1px;
-    height: 12px;
+    height: 70%;
     background-color: #969696;
 }
 .wrap #login_form .user_reaction .user_find a:last-child:after {display: none;}
@@ -136,5 +153,15 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.wrap .sns li a img {
+    display: inline-block;
+    width: 48px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.wrap .sns li a span {
+    font-size: 0.875rem;
+    color: #969696;
 }
 .wrap .ad a img {width: 100%;}
