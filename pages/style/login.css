@@ -165,3 +165,7 @@ section {
     color: #969696;
 }
 .wrap .ad a img {width: 100%;}
+
+@media screen and (max-width: 512px) {
+    .wrap {padding: 0 16px;}
+}
