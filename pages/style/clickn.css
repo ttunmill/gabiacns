@@ -427,4 +427,14 @@
     .sec08 .sec08_contents .content_list li:last-child {margin: 0;}
     .sec08 .sec08_contents .content_list li .price {font-size: 1.625rem;}
     .sec08 .sec08_contents .content_list + p {text-align: center;}
+    /* btn */
+    .sec09 .scroll_btn a {
+        width: 60%;
+        font-size: 0.875rem;
+        line-height: 50px;
+        min-width: 200px;
+    }
+    .fixed {
+        bottom: 3%;
+    }
 }
