@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>초간편 쇼핑몰 - 가비아커머스</title>
     <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/animation.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/clickn.css">
     <!-- plugin css -->
@@ -13,6 +14,7 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="./js/clickn.js" defer></script>
     <script src="./js/common.js" defer></script>
+    <script src="../js/common.js" defer></script>
     <!-- plugin js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -33,7 +35,7 @@
             </div>
         </section>
         <section class="sec02">
-            <div class="sec02_wrap">
+            <div class="sec02_wrap ani">
                 <div class="txt">
                     <h2>쉽게 완성하는 쇼핑몰<br>클릭엔과 함께 시작해보세요</h2>
                     <p>간단하게 나만의 쇼핑몰을 만들고 성장시킬 수 있습니다</p>
@@ -178,10 +180,12 @@
                             <h3>개발자가 없어도 디자이너가 없어도 괜찮습니다</h3>
                             <p>400개 이상의 디자인 블록을 한번의 클릭만으로<br>자유롭게 추가해 다양한 기능과 멋진 디자인을 가진<br>쇼핑몰을 간단하게 만들 수 있습니다.</p>
                         </div>
-                        <p><img src="./images//clickn/clickn_build_1.png" alt=""></p>
+                        <p class="pc_mode"><img src="./images//clickn/clickn_build_1.png" alt=""></p>
+                        <p class="sp_mode"><img src="./images/clickn/clickn_build_1_s.png" alt=""></p>
                     </li>
                     <li>
-                        <p><img src="./images//clickn/clickn_build_2.png" alt=""></p>
+                        <p class="pc_mode"><img src="./images//clickn/clickn_build_2.png" alt=""></p>
+                        <p class="sp_mode"><img src="./images//clickn/clickn_build_2_s.png" alt=""></p>
                         <div class="txt">
                             <h3>
                                 번거로운 작업, 복잡한 작업없이 쇼핑몰을 운영합니다</h3>
@@ -255,18 +259,24 @@
                     </div>
                     <ul class="content_list">
                         <li>
-                            <p><img src="./images/clickn/clickn_benefits_1.png" alt=""></p>
-                            <h3>서비스<br>이용 비용</h3>
+                            <div class="content_g">
+                                <p><img src="./images/clickn/clickn_benefits_1.png" alt=""></p>
+                                <h3>서비스<br>이용 비용</h3>
+                            </div>
                             <p class="price">8,000원</p>
                         </li>
                         <li>
-                            <p><img src="./images/clickn/clickn_benefits_2.png" alt=""></p>
-                            <h3>업계최저<br>카드수수료</h3>
+                            <div class="content_g">
+                                <p><img src="./images/clickn/clickn_benefits_2.png" alt=""></p>
+                                <h3>업계최저<br>카드수수료</h3>
+                            </div>
                             <p class="price">1%</p>
                         </li>
                         <li>
-                            <p><img src="./images/clickn/clickn_benefits_3.png" alt=""></p>
-                            <h3>즉시 사용 가능한<br>전자결제(PG)</h3>
+                            <div class="content_g">
+                                <p><img src="./images/clickn/clickn_benefits_3.png" alt=""></p>
+                                <h3>즉시 사용 가능한<br>전자결제(PG)</h3>
+                            </div>
                             <p class="price">신청 즉시</p>
                         </li>
                     </ul>
