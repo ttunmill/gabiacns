@@ -354,7 +354,18 @@
     .sec01_txt p {font-size: 1rem;}
     .sec02 .sec02_list li {width: 80%;}
     /* sec04 */
+    .sec04 .review_list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        padding-top: 0;
+        padding: 30px;
+    }
     .sec04 .review_list li {
         width: 100%;
+        
+    }
+    .sec04 .review_list li .review_content {
+        width: 400px;
     }
 }
