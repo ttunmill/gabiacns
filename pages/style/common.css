@@ -1,4 +1,7 @@
 /* 공통 */
+html,body {
+    overflow-x: hidden;
+}
 .link_btn {
     display: inline-block;
     background-color: #000;
