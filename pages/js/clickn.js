@@ -23,13 +23,13 @@ swiperSlides.forEach(function (element, index) {
 });
 
 
+// fixed버튼 바텀위치시 고정 아닐시 따라옴
 $(function () {
 	const cvbtn = $('.scroll_btn');
 	const height = 100;
 
 	cvbtn.addClass('hide');
 
-    // スクロール
 	const scrollEv = function () {
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > height + 400) {
@@ -45,7 +45,6 @@ $(function () {
 
 	window.addEventListener('scroll', scrollEv);
 
-	// スクロール固定
 	const cvbtnArea = $('.scroll_btn');
 
 	function checkbtn(element, check = 'above') {

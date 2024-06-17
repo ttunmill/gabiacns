@@ -1,0 +1,161 @@
+/* sec01 */
+.sec01 {
+    position: relative;
+    background-image: url("../images/selling/agency_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.sec01_txt {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.sec01_txt h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.sec01_txt p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin: 20px 0;
+}
+/* sec02 */
+.sec02 {padding: 100px 0;}
+.sec02 .sec02_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec02 .txt {margin-bottom: 50px;}
+.sec02 .txt h2 {line-height: 1.3;}
+.sec02 .sec02_g {
+    background-color: #edf6ff;
+}
+.sec02 .sec02_g p img {width: 100%;}
+.sec02 .sec02_g p:last-child {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec02 .sec02_g p:last-child span {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.sec02 .sec02_g p:last-child span:first-child {margin-bottom: 20px;}
+.sec02 .sec02_g p:last-child span:last-child {
+    line-height: 1.3;
+    color: #628bb1;
+}
+.sec02 .sec02_g p:last-child span:last-child em {
+    color: #0063fd;
+    font-weight: 500;
+}
+/* sec03 */
+.sec03 {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.sec03 .txt {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sec03 .sec03_list {
+    display: flex;
+    justify-content: space-between;
+}
+.sec03 .sec03_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 5 - 2rem);
+}
+.sec03 .sec03_list p:first-child {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec03 .sec03_list p:last-child {
+    text-align: center;
+    line-height: 1.3;
+}
+.sec03 .sec03_list p:first-child img {
+    width: 70%;
+    height: 70%;
+}
+/* sec04 */
+.sec04 {
+    background-image: url("../images/selling/agency_works_bg.jpg");
+    background-size: 100%;
+    padding: 100px 0;
+}
+.sec04 .txt {margin-bottom: 50px;}
+.sec04 .txt h2 {
+    text-align: center;
+    color: #fff;
+    line-height: 1.3;
+}
+.sec04_swiper {
+    position: relative;
+}
+.sec04_swiper .swiper-wrapper .swiper-slide p {text-align: center;}
+/* sec05 */
+.sec05 {padding: 100px 0;}
+.sec05 .txt {text-align: center;}
+.sec05 .txt h2 {line-height: 1.3;}
+.sec05 .txt p {margin-bottom: 20px;}
+.sec05 .txt p:last-child {
+    font-weight: 800;
+    color: #0042cf;
+}
+
+/* reponsive */
+@media screen and (max-width: 1180px) {
+    
+}
+@media screen and (max-width : 960px) {
+    /* sec02 */
+    .sec02 .sec02_g p:last-child span:last-child {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 640px) {
+    /* sec01 */
+    .sec01 {
+        position: relative;
+        background-image: url("../images/selling/agency_1_s.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh
+    }
+    .sec01_txt {
+        top: 20%;
+        left: 5%;
+    }
+    .sec01_txt h1 {font-size: 1.875rem;}
+    .sec01_txt p {font-size: 1rem;}
+    /* sec02 */
+    .sec02 .sec02_wrap > p {margin-bottom: 0;}
+    /* sec03 */
+    .sec03 .sec03_list {
+        padding: 20px;
+        overflow-x: scroll;
+        gap: 5rem;
+    }
+    .sec03 .sec03_list li {width: 100%;}
+}
