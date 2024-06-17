@@ -291,8 +291,8 @@
         width: 100%;
     }
     .header_swiper .swiper-wrapper .swiper-slide .slide_txt {
-        top: 25%;
-        left: 5%;
+        top: 20%;
+        left: 16px;
     }
     .header_swiper .swiper-wrapper .swiper-slide h1 {font-size: 1.875rem;}
     .header_swiper .swiper-wrapper .slide1 {background-image: url("../images/esellers/ably_s.jpg");}

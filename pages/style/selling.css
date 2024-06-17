@@ -145,7 +145,7 @@
     }
     .sec01_txt {
         top: 20%;
-        left: 5%;
+        left: 16px;
     }
     .sec01_txt h1 {font-size: 1.875rem;}
     .sec01_txt p {font-size: 1rem;}

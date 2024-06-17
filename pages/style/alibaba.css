@@ -326,8 +326,8 @@ tr, td {
         width: 100%;
     }
     .header_swiper .swiper-wrapper .swiper-slide .slide_txt {
-        top: 25%;
-        left: 5%;
+        top: 20%;
+        left: 16px;
     }
     .header_swiper .swiper-wrapper .swiper-slide h1 {font-size: 1.875rem;}
     .header_swiper .swiper-wrapper .slide1 {background-image: url("../images/alibaba/alibaba_1_s.png");}
@@ -374,7 +374,10 @@ tr, td {
     .sec03 .sec03_contents li {width: calc((100% / 2) - 2rem);}
     .sec03 .txt .membership {justify-content: flex-start;}
     /* sec04 */
-    .sec04 .sec04_wrap {overflow-y: hidden;}
+    .sec04 .sec04_wrap {
+        padding: 20px;
+        overflow-y: hidden;
+    }
     /* sec05 */
     .sec05_list {
         flex-wrap: wrap;
