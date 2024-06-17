@@ -370,8 +370,8 @@ tr, td {
         justify-content: flex-start;
         gap: 1rem;
     }
-    .sec03 .sec03_contents {gap: 5rem;}
-    .sec03 .sec03_contents li {width: calc((100% / 3) - 2rem);}
+    .sec03 .sec03_contents {gap: 2rem;}
+    .sec03 .sec03_contents li {width: calc((100% / 2) - 2rem);}
     .sec03 .txt .membership {justify-content: flex-start;}
     /* sec04 */
     .sec04 .sec04_wrap {overflow-y: hidden;}
