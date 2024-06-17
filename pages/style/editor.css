@@ -94,7 +94,7 @@
     padding: 100px 0;
     background-image: url("../images/editor/agency_works_bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
 }
 .sec04 .txt {margin-bottom: 50px;}
