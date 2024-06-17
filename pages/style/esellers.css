@@ -65,5 +65,305 @@
 .header_swiper .swiper-wrapper .swiper-slide a:hover {opacity: 0.7;}
 /* sec02 */
 .sec02 {padding: 100px 0;}
-.sec02 .txt {text-align: center;}
-.sec02 .txt h2 {line-height: 1.3;}
+.sec02 .sec02_wrap > .txt {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sec02 .sec02_wrap > .txt h2 {line-height: 1.3;}
+.sec02 .sec02_list {
+    display: flex;
+    justify-content: space-between
+}
+.sec02 .sec02_list li:first-child {background-image: url("../images/esellers/esellers_intro_1.png");}
+.sec02 .sec02_list li:nth-child(2) {background-image: url("../images/esellers/esellers_intro_2.png");}
+.sec02 .sec02_list li:last-child {background-image: url("../images/esellers/esellers_intro_3.png");}
+.sec02 .sec02_list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(100% / 3 - 1rem);
+    aspect-ratio: 1 / 1.3;
+}
+.sec02 .sec02_list li > p {
+
+}
+.sec02 .sec02_list li > .txt {}
+.sec02 .sec02_list li > .txt h3,
+.sec02 .sec02_list li > .txt p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.sec02 .sec02_list li > .txt h3 {margin: 30px 0;}
+.sec02 .sec02_list li > .txt p {line-height: 1.3;}
+.sec02 .sec02_list li:first-child > .txt h3 {}
+.sec02 .sec02_list li:first-child > .txt p {color: #777;}
+.sec02 .sec02_list li:nth-child(2) > .txt h3, 
+.sec02 .sec02_list li:last-child > .txt h3 {
+    color: #fff;
+}
+.sec02 .sec02_list li:nth-child(2) > .txt p {color: #c9c8ff;}
+.sec02 .sec02_list li:last-child > .txt p {color: #8686c5;}
+/* sec03 */
+.sec03 {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.sec03 .sec03_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec03 .sec03_wrap .txt h2 {line-height: 1.3;}
+.sec03 .sec03_wrap .txt {width: calc(100% / 2 - 2rem);}
+.sec03 .sec03_wrap .txt + p {width: calc(100% / 2 - 2rem);}
+.sec03 .sec03_wrap .txt + p img {width: 100%;}
+/* sec04 */
+.sec04 {padding: 100px 0;}
+.sec04 .txt {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sec04 .txt h2 {line-height: 1.3;}
+.sec04 .sec04_list {
+    display: flex;
+    padding: 5rem 3rem;
+    box-shadow: 0px 5px 20px 20px rgba(150, 150, 160, .1);
+}
+.sec04 .sec04_list li {
+    display: flex;
+    justify-content: center;
+}
+.sec04 .sec04_list li .sec04_g {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: calc(100% / 2 - 2rem);
+}
+.sec04 .sec04_list li .sec04_g h3 {
+    line-height: 1.3;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sec04 .sec04_list li .sec04_g p { 
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: #777;
+}
+.sec04 .sec04_list li .sec04_g + p {
+    width: calc(100% / 2 - 1rem);
+    text-align: center;
+}
+.sec04 .sec04_list li:first-child .sec04_g + p::after {
+    content: "";
+    display: inline-block;
+    border-right: 1px solid #f4f4f4;
+    width: 1px;
+    height: 100%;
+}
+/* sec05 */
+.sec05 {
+    padding: 100px 0;
+    background-image: url("../images/esellers/esellers_center_bg.png");
+    background-position: center;
+}
+.sec05 .txt {
+    text-align: center;
+    color: #fff;
+}
+.sec05 .txt h3,
+.sec05 .txt h3 {
+    line-height: 1.3;
+}
+/* sec06 */
+.sec06 {
+    background-color: #253340;
+    padding: 100px 0;
+}
+.sec06 .txt {margin-bottom: 50px;}
+.sec06 .txt h2 {
+    text-align: center;
+    color: #fff;
+    line-height: 1.3;
+}
+.sec06 .sec06_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sec06 .sec06_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 2);
+    margin-bottom: 5rem;
+}
+.sec06 .sec06_list li .sec06_g {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #fff;
+    width: 60%;
+}
+.sec06 .sec06_list li .sec06_g p img {width: 100%;}
+.sec06 .sec06_list li:nth-child(2),
+.sec06 .sec06_list li:nth-child(4) {
+    margin-top: 5rem;
+}
+.sec06 .sec06_list li .sec06_g h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 500;
+    
+}
+.sec06 .sec06_list li .sec06_g p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #777;
+}
+/* sec07 */
+.sec07 {padding: 100px 0;}
+.sec07 .sec07_wrap {
+    display: flex;
+}
+.sec07 .txt {width: 100%;}
+.sec07 .txt h2 {
+    font-weight: 500 !important;
+    line-height: 1.2;
+}
+.sec07 .txt h2 span {
+    color: #0042cf;
+    font-weight: 500;
+}
+.sec07 .sec07_contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec07 .sec07_contents li {
+    width: calc(100% / 2);
+    margin-bottom: 50px;
+}
+.sec07 .sec07_contents li:last-child {margin: 0;}
+.sec07 .sec07_contents li h3 {
+    margin: 20px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.sec07 .sec07_contents li p {
+    color: #777;
+    line-height: 1.3;
+}
+/* sec08 */
+.sec08 {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+.sec08 .txt {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sec08 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+/* sec09 */
+.sec09 {padding: 100px 0;}
+.sec09 .txt {text-align: center;}
+.sec09 .txt h2 {margin: 30px 0 !important;}
+.scroll_btn a {background-image: linear-gradient(90deg, #2420dc, #7774ff);}
+/* ================ clickn responsive */
+@media screen and (max-width : 1180px) {
+    .sec01 {padding: 0 !important;}
+}
+@media screen and (max-width : 960px) {
+    /* sec01 */
+    .header_swiper .swiper-wrapper .swiper-slide {
+        height: 100vh;
+        width: 100%;
+    }
+    .header_swiper .swiper-wrapper .swiper-slide .slide_txt {
+        top: 25%;
+        left: 5%;
+    }
+    .header_swiper .swiper-wrapper .swiper-slide h1 {font-size: 1.875rem;}
+    .header_swiper .swiper-wrapper .slide1 {background-image: url("../images/esellers/ably_s.jpg");}
+    .header_swiper .swiper-wrapper .slide2 {background-image: url("../images/esellers/esellers_main_s.jpg");}
+    .header_swiper .swiper-wrapper .slide3 {background-image: url("../images/esellers/esellreviewer_s.png");}
+    /* sec03 */
+    .sec03 .sec03_wrap {flex-direction: column;}
+    .sec03 .sec03_wrap .txt {width: 100%;}
+    .sec03 .sec03_wrap .txt h2 {text-align: center;}
+    .sec03 .sec03_wrap .txt + p {width: 80%;}
+    /* sec04 */
+    .sec04 .sec04_list {flex-direction: column;}
+    .sec04 .sec04_list li {flex-direction: column;}
+    .sec04 .sec04_list li:first-child {padding-bottom: 30px;}
+    .sec04 .sec04_list li .sec04_g {width: 100%;}
+    .sec04 .sec04_list li .sec04_g h3 {
+        margin-bottom: 20px;
+        font-size: 1.25rem
+    }
+    .sec04 .sec04_list li .sec04_g p {font-size: 1rem;}
+    .sec04 .sec04_list li .sec04_g + p {
+        width: 100%;
+        text-align: right;
+    }
+    .sec04 .sec04_list li:first-child .sec04_g + p::after {
+        border-right: 0;
+        border-bottom: 1px solid #f4f4f4;
+        width: 100%;
+        height: 1px;
+    }
+    /* sec07 */
+    .sec07 .sec07_wrap {flex-direction: column;}
+    .sec07 .txt {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .sec07 .sec07_contents {gap: 1rem;}
+    .sec07 .sec07_contents li {width: calc((100% / 3) - 1rem);}
+    .sec07 .sec07_contents li h3 {font-size: 1rem;}
+    /* sec08 */
+    .sec08 ul {justify-content: center;}
+}
+@media screen and (max-width : 640px) {
+    /* sec02 */
+    .sec02 .sec02_wrap {overflow-y: hidden;}
+    .sec02 .sec02_list {
+        padding: 20px;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        width: 1200px;
+        gap: 2rem;
+    }
+    .sec02 .sec02_list li {
+        width: 500px;
+        aspect-ratio: unset;
+    }
+    /* sec03 */
+    .sec03 .sec03_wrap .txt + p {width: 100%;}
+    /* sec06 */
+    .sec06 .sec06_list li {width: 100%;}
+    .sec06 .sec06_list li .sec06_g h3 {font-size: 1.25rem;}
+    .sec06 .sec06_list li .sec06_g p {font-size: 1rem;}
+    .sec06 .sec06_list li:nth-child(2), .sec06 .sec06_list li:nth-child(4) {margin-top: 0;}
+    /* sec07 */
+    .sec07 .txt {text-align: left;}
+    .sec07 .sec07_contents {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .sec07 .sec07_contents li {width: calc((100% / 2) - 1rem);}
+    /* sec08 */
+    .sec08 ul li  {width: calc(100% / 2 - 1rem)}
+    .sec08 ul li img {width: 100%;}
+}
