@@ -3,6 +3,7 @@ html,body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+main {margin-top: 80px;}
 .sp_mode {display: none;}
 .pc_mode {display: block;}
 .link_btn {
