@@ -1,5 +1,8 @@
 /* 공통 */
-html,body {overflow-x: hidden;}
+html,body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 .sp_mode {display: none;}
 .pc_mode {display: block;}
 .link_btn {
