@@ -115,4 +115,3 @@
     </div>
 </div>
 </footer>
-<div class="scroll_top_btn"></div>

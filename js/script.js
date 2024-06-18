@@ -30,6 +30,7 @@ for(let i of ani) {
 }
 
 // scroll top btn
+let top_btn = document.querySelector(".scroll_top_btn")
 top_btn.addEventListener("click", () => {
     window.scrollTo(0, 0)
 })
