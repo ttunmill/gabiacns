@@ -7,7 +7,6 @@ let gnb = document.querySelector(".gnb")
 let nav = document.querySelector("nav")
 let nav_clone = nav.cloneNode(true)
 let m_menu = document.querySelector(".m_menu")
-let top_btn = document.querySelector(".scroll_top_btn")
 m_menu.appendChild(nav_clone)
 sign_up.style.display = "none"
 
