@@ -23,285 +23,295 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header></header>
-    <section class="sec01">
-        <div class="swiper-container header_swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                    <div class="slide_txt">
-                        <h1>이셀러스X에이블리<br>신규 판매처 연동 이벤트</h1>
-                        <p>지금 바로 에이블리 판매자ID 등록하고 혜택 받으세요</p>
-                        <a href="#">자세히 보기</a>
+    <header>
+        <?
+        include("./header.php");
+        ?>
+    </header>
+    <main>
+        <section class="sec01">
+            <div class="swiper-container header_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="slide_txt">
+                            <h1>이셀러스X에이블리<br>신규 판매처 연동 이벤트</h1>
+                            <p>지금 바로 에이블리 판매자ID 등록하고 혜택 받으세요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="slide_txt">
+                            <h1>가성비 NO.1<br>쇼핑몰 통합관리는 이셀러스</h1>
+                            <p>더 쉽고 편리한 온라인 판매, 이셀러스로 시작하세요.</p>
+                            <a href="#">14일 무료로 시작하기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="slide_txt">
+                            <h1>이셀러스 찐유저라면<br>후기 남기고 선물 받으세요</h1>
+                            <p>블로그 후기를 작성해주시면 추첨을 통해 상품을 드립니다.</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide2">
-                    <div class="slide_txt">
-                        <h1>가성비 NO.1<br>쇼핑몰 통합관리는 이셀러스</h1>
-                        <p>더 쉽고 편리한 온라인 판매, 이셀러스로 시작하세요.</p>
+                <!--필요 시 사용(선택)-->
+                
+                <div class="swiper_navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
+        <section class="sec02">
+            <div class="sec02_wrap">
+                <div class="txt">
+                    <h2>성능과 가격 모두 놓칠 수 없다면,<br>이셀러스를 선택하세요.</h2>
+                </div>
+                <ul class="sec02_list">
+                    <li>
+                        <p><img src="./images/esellers/hiselling_intro_4.png" alt=""></p>
+                        <div class="txt">
+                            <h3>통합관리가 필요한 누구나!</h3>
+                            <p>초기 셀러부터 위탁 셀러까지<br>온라인 판매에 필요한 기능을 제공해요.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/esellers_intro_5.png" alt=""></p>
+                        <div class="txt">
+                            <h3>인건비와 시간 절약 YES!</h3>
+                            <p>상품등록/수정, 주문수집/송장전송까지 한번에 일괄처리하세요.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/esellers_intro_6.png" alt=""></p>
+                        <div class="txt">
+                            <h3>추가 요금 걱정 NO!</h3>
+                            <p>무제한 요금제로 상품관리와<br>주문관리를 맘껏 사용하세요.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec03">
+            <div class="sec03_wrap">
+                <div class="txt">
+                    <h2>이런 상황이라면?<br>지금 바로 사용해 보세요!</h2>
+                </div>
+                <p><img src="./images/esellers/esellers_recommend_all.png" alt=""></p>
+            </div>
+        </section>
+        <section class="sec04">
+            <div class="sec04_wrap">
+                <div class="txt">
+                    <h2>이런 상황이라면?<br>지금 바로 사용해 보세요!</h2>
+                </div>
+                <ul class="sec04_list">
+                    <li>
+                        <div class="sec04_g">
+                            <h3>꼼꼼한<br>교육 커리큘럼</h3>
+                            <p>
+                                초보 셀러도 걱정 없어요.
+                                창업 교육센터를 통한
+                                오프라인 교육부터 온라인까지
+                                전문강사가 교육해 드려요.
+                            </p>
+                        </div>
+                        <p><img src="./images/esellers/hiselling_easy_1.png" alt=""></p>
+                        
+                    </li>
+                    <li>
+                        <div class="sec04_g">
+                            <h3>1:1 원격으로<br>빠른 문제 해결</h3>
+                            <p>
+                                혼자서 고민하지 마세요.
+                                원격지원 서비스로
+                                빠르게 문제를 해결해 드려요.
+                            </p>
+                        </div>
+                        <p><img src="./images/esellers/hiselling_easy_2.png" alt=""></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec05">
+            <div class="sec05_wrap">
+                <div class="txt">
+                    <h2><img src="./images/esellers/logo_esellers.png" alt="이셀러스"></h2>
+                    <h3>이셀러스는 창업 인큐베이팅 센터를<br>운영하고 있습니다.</h3>
+                    <p>믿을 수 있는 전문 강사진이 상품 등록부터 다양한 실무 노하우까지<br>온라인 비즈니스가 성공할 수 있도록 멘토링 해 드립니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec06">
+            <div class="sec06_wrap">
+                <div class="txt">
+                    <h2>셀러의 효율을 높이는<br>통합관리 솔루션</h2>
+                </div>
+                <ul class="sec06_list">
+                    <li>
+                        <div class="sec06_g">
+                            <p><img src="./images/esellers/esellers_sellers_1.png" alt=""></p>
+                            <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
+                            <p>
+                                엑셀 업로드로 손쉽게 위탁상품을 등록하고
+                                위탁상품 사이트 연동으로 주문전송부터
+                                송장번호 수집까지 할 수 있어요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec06_g">
+                            <p><img src="./images/esellers/hiselling_sellers_2.png" alt=""></p>
+                            <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
+                            <p>
+                                엑셀 업로드로 손쉽게 위탁상품을 등록하고
+                                위탁상품 사이트 연동으로 주문전송부터
+                                송장번호 수집까지 할 수 있어요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec06_g">
+                            <p><img src="./images/esellers/esellers_sellers_3.png" alt=""></p>
+                            <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
+                            <p>
+                                엑셀 업로드로 손쉽게 위탁상품을 등록하고
+                                위탁상품 사이트 연동으로 주문전송부터
+                                송장번호 수집까지 할 수 있어요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec06_g">
+                            <p><img src="./images/esellers/hiselling_sellers_4.png" alt=""></p>
+                            <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
+                            <p>
+                                엑셀 업로드로 손쉽게 위탁상품을 등록하고
+                                위탁상품 사이트 연동으로 주문전송부터
+                                송장번호 수집까지 할 수 있어요.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec07">
+            <div class="sec07_wrap">
+                <div class="txt">
+                    <h2>통합관리를 위한<br>모든 기능</h2>
+                </div>
+                <ul class="sec07_contents">
+                    <li>
+                        <p><img src="./images/esellers/hiselling_details_1.png" alt=""></p>
+                        <h3>01 상품관리</h3>
+                        <p>다수의 쇼핑몰 상품수집,<br>일괄 상품 등록/수정 기능으로<br>상품을 효율적으로 관리하세요.</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/hiselling_details_2.png" alt=""></p>
+                        <h3>02 주문관리</h3>
+                        <p>한번에 주문을 수집하고<br>주문확인부터 송장입력까지<br>한 곳에서 관리하세요.</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/hiselling_details_3.png" alt=""></p>
+                        <h3>03 공급사연동</h3>
+                        <p>공급사 상품 엑셀 업로드, 공급사 사이트로<br>주문 전송 및 송장수집 기능으로<br>편리하게 관리하세요.</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/esellers_details_4.png" alt=""></p>
+                        <h3>04 송장자동발행</h3>
+                        <p>원클릭 송장자동발행(굿스플로)<br>기능으로 주문을 편리하게<br>관리하세요.</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/hiselling_details_5.png" alt=""></p>
+                        <h3>05 문의관리</h3>
+                        <p>고객 문의/리뷰를 한번에<br>수집하고 일괄 답변 기능으로<br>빠른 피드백을 제공하세요.</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/esellers/hiselling_details_6.png" alt=""></p>
+                        <h3>06 CS관리</h3>
+                        <p>주문서별 CS메모를 등록하고<br>처리하여 고객 요청사항을<br>체계적으로 관리하세요.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec08">
+            <div class="sec08_wrap">
+                <div class="txt">
+                    <h2>지원쇼핑몰</h2>
+                    <p>이셀러스로 더 빠르게 쇼핑몰을 확장하세요</p>
+                    <p>※ 지원 쇼핑몰은 지속적으로 추가될 예정입니다</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_1.png" alt="스마트스토어">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_4.png" alt="옥션">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_3.png" alt="지마켓">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_5.png" alt="11번가">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_2.png" alt="쿠팡">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_tmon.png" alt="티몬">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/hiselling_partners_6.png" alt="위메프">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_interpark.png" alt="인터파크">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_lotteon.png" alt="롯데온">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_ssg.png" alt="쓱">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_emartmall.png" alt="이마트몰">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_gsshop.png" alt="지에스샵">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_72time.png" alt="72time">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_hmall.png" alt="hmall">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_cjone.png" alt="cjonestyle">
+                    </li>
+                    <li>
+                        <img src="./images/esellers/logo_enchovy.png" alt="멸치쇼핑">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec09">
+            <div class="sec09_wrap">
+                <div class="txt">
+                    <p>온라인 판매 효율적으로 관리할 수 있습니다.</p>
+                    <h2>쇼핑몰 통합관리, 이셀러스로 시작하세요!</h2>
+                    <div class="scroll_btn show fixed">
                         <a href="#">14일 무료로 시작하기</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide3">
-                    <div class="slide_txt">
-                        <h1>이셀러스 찐유저라면<br>후기 남기고 선물 받으세요</h1>
-                        <p>블로그 후기를 작성해주시면 추첨을 통해 상품을 드립니다.</p>
-                        <a href="#">자세히 보기</a>
-                    </div>
-                </div>
             </div>
-            <!--필요 시 사용(선택)-->
-            
-            <div class="swiper_navigation">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-    </section>
-    <section class="sec02">
-        <div class="sec02_wrap">
-            <div class="txt">
-                <h2>성능과 가격 모두 놓칠 수 없다면,<br>이셀러스를 선택하세요.</h2>
-            </div>
-            <ul class="sec02_list">
-                <li>
-                    <p><img src="./images/esellers/hiselling_intro_4.png" alt=""></p>
-                    <div class="txt">
-                        <h3>통합관리가 필요한 누구나!</h3>
-                        <p>초기 셀러부터 위탁 셀러까지<br>온라인 판매에 필요한 기능을 제공해요.</p>
-                    </div>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/esellers_intro_5.png" alt=""></p>
-                    <div class="txt">
-                        <h3>인건비와 시간 절약 YES!</h3>
-                        <p>상품등록/수정, 주문수집/송장전송까지 한번에 일괄처리하세요.</p>
-                    </div>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/esellers_intro_6.png" alt=""></p>
-                    <div class="txt">
-                        <h3>추가 요금 걱정 NO!</h3>
-                        <p>무제한 요금제로 상품관리와<br>주문관리를 맘껏 사용하세요.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sec03">
-        <div class="sec03_wrap">
-            <div class="txt">
-                <h2>이런 상황이라면?<br>지금 바로 사용해 보세요!</h2>
-            </div>
-            <p><img src="./images/esellers/esellers_recommend_all.png" alt=""></p>
-        </div>
-    </section>
-    <section class="sec04">
-        <div class="sec04_wrap">
-            <div class="txt">
-                <h2>이런 상황이라면?<br>지금 바로 사용해 보세요!</h2>
-            </div>
-            <ul class="sec04_list">
-                <li>
-                    <div class="sec04_g">
-                        <h3>꼼꼼한<br>교육 커리큘럼</h3>
-                        <p>
-                            초보 셀러도 걱정 없어요.
-                            창업 교육센터를 통한
-                            오프라인 교육부터 온라인까지
-                            전문강사가 교육해 드려요.
-                        </p>
-                    </div>
-                    <p><img src="./images/esellers/hiselling_easy_1.png" alt=""></p>
-                    
-                </li>
-                <li>
-                    <div class="sec04_g">
-                        <h3>1:1 원격으로<br>빠른 문제 해결</h3>
-                        <p>
-                            혼자서 고민하지 마세요.
-                            원격지원 서비스로
-                            빠르게 문제를 해결해 드려요.
-                        </p>
-                    </div>
-                    <p><img src="./images/esellers/hiselling_easy_2.png" alt=""></p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sec05">
-        <div class="sec05_wrap">
-            <div class="txt">
-                <h2><img src="./images/esellers/logo_esellers.png" alt="이셀러스"></h2>
-                <h3>이셀러스는 창업 인큐베이팅 센터를<br>운영하고 있습니다.</h3>
-                <p>믿을 수 있는 전문 강사진이 상품 등록부터 다양한 실무 노하우까지<br>온라인 비즈니스가 성공할 수 있도록 멘토링 해 드립니다.</p>
-            </div>
-        </div>
-    </section>
-    <section class="sec06">
-        <div class="sec06_wrap">
-            <div class="txt">
-                <h2>셀러의 효율을 높이는<br>통합관리 솔루션</h2>
-            </div>
-            <ul class="sec06_list">
-                <li>
-                    <div class="sec06_g">
-                        <p><img src="./images/esellers/esellers_sellers_1.png" alt=""></p>
-                        <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
-                        <p>
-                            엑셀 업로드로 손쉽게 위탁상품을 등록하고
-                            위탁상품 사이트 연동으로 주문전송부터
-                            송장번호 수집까지 할 수 있어요.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="sec06_g">
-                        <p><img src="./images/esellers/hiselling_sellers_2.png" alt=""></p>
-                        <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
-                        <p>
-                            엑셀 업로드로 손쉽게 위탁상품을 등록하고
-                            위탁상품 사이트 연동으로 주문전송부터
-                            송장번호 수집까지 할 수 있어요.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="sec06_g">
-                        <p><img src="./images/esellers/esellers_sellers_3.png" alt=""></p>
-                        <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
-                        <p>
-                            엑셀 업로드로 손쉽게 위탁상품을 등록하고
-                            위탁상품 사이트 연동으로 주문전송부터
-                            송장번호 수집까지 할 수 있어요.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="sec06_g">
-                        <p><img src="./images/esellers/hiselling_sellers_4.png" alt=""></p>
-                        <h3>손쉬운 위탁상품 관리로<br>작업 편의 UP</h3>
-                        <p>
-                            엑셀 업로드로 손쉽게 위탁상품을 등록하고
-                            위탁상품 사이트 연동으로 주문전송부터
-                            송장번호 수집까지 할 수 있어요.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sec07">
-        <div class="sec07_wrap">
-            <div class="txt">
-                <h2>통합관리를 위한<br>모든 기능</h2>
-            </div>
-            <ul class="sec07_contents">
-                <li>
-                    <p><img src="./images/esellers/hiselling_details_1.png" alt=""></p>
-                    <h3>01 상품관리</h3>
-                    <p>다수의 쇼핑몰 상품수집,<br>일괄 상품 등록/수정 기능으로<br>상품을 효율적으로 관리하세요.</p>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/hiselling_details_2.png" alt=""></p>
-                    <h3>02 주문관리</h3>
-                    <p>한번에 주문을 수집하고<br>주문확인부터 송장입력까지<br>한 곳에서 관리하세요.</p>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/hiselling_details_3.png" alt=""></p>
-                    <h3>03 공급사연동</h3>
-                    <p>공급사 상품 엑셀 업로드, 공급사 사이트로<br>주문 전송 및 송장수집 기능으로<br>편리하게 관리하세요.</p>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/esellers_details_4.png" alt=""></p>
-                    <h3>04 송장자동발행</h3>
-                    <p>원클릭 송장자동발행(굿스플로)<br>기능으로 주문을 편리하게<br>관리하세요.</p>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/hiselling_details_5.png" alt=""></p>
-                    <h3>05 문의관리</h3>
-                    <p>고객 문의/리뷰를 한번에<br>수집하고 일괄 답변 기능으로<br>빠른 피드백을 제공하세요.</p>
-                </li>
-                <li>
-                    <p><img src="./images/esellers/hiselling_details_6.png" alt=""></p>
-                    <h3>06 CS관리</h3>
-                    <p>주문서별 CS메모를 등록하고<br>처리하여 고객 요청사항을<br>체계적으로 관리하세요.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sec08">
-        <div class="sec08_wrap">
-            <div class="txt">
-                <h2>지원쇼핑몰</h2>
-                <p>이셀러스로 더 빠르게 쇼핑몰을 확장하세요</p>
-                <p>※ 지원 쇼핑몰은 지속적으로 추가될 예정입니다</p>
-            </div>
-            <ul>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_1.png" alt="스마트스토어">
-                </li>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_4.png" alt="옥션">
-                </li>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_3.png" alt="지마켓">
-                </li>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_5.png" alt="11번가">
-                </li>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_2.png" alt="쿠팡">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_tmon.png" alt="티몬">
-                </li>
-                <li>
-                    <img src="./images/esellers/hiselling_partners_6.png" alt="위메프">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_interpark.png" alt="인터파크">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_lotteon.png" alt="롯데온">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_ssg.png" alt="쓱">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_emartmall.png" alt="이마트몰">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_gsshop.png" alt="지에스샵">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_72time.png" alt="72time">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_hmall.png" alt="hmall">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_cjone.png" alt="cjonestyle">
-                </li>
-                <li>
-                    <img src="./images/esellers/logo_enchovy.png" alt="멸치쇼핑">
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sec09">
-        <div class="sec09_wrap">
-            <div class="txt">
-                <p>온라인 판매 효율적으로 관리할 수 있습니다.</p>
-                <h2>쇼핑몰 통합관리, 이셀러스로 시작하세요!</h2>
-                <div class="scroll_btn show fixed">
-                    <a href="#">14일 무료로 시작하기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="section_cvbtnsec"></div>
-    <footer></footer>
+        </section>
+        <div class="section_cvbtnsec"></div>
+    </main>
+    <footer>
+        <?
+        include("./footer.php");
+        ?>
+    </footer>
 </body>
 </html>

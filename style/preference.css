@@ -335,7 +335,7 @@ footer .ft_wrap .company .address li:last-child img {
         width: 100%;
     }
     nav .gnb_right {display: none;}
-    header {padding-top: 56px;}
+    /* header {padding-top: 56px;} */
 
     /* footer */
     footer {padding: 30px 16px;}

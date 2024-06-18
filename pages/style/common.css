@@ -79,6 +79,7 @@ section div[class *= wrap] > .txt h3 em {
 @media screen and (max-width : 960px) {
     .sp_mode {display: block;}
     .pc_mode {display: none;}
+    main {margin-top: 56px;}
     section div[class *= wrap] > .txt h2, 
     section div[class *= wrap] > .txt h3 {
         font-size: 1.625rem;
