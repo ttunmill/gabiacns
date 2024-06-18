@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <?
+    include("./header.php");
+    ?>
     <header></header>
     <main>
         <section class="sec01">
