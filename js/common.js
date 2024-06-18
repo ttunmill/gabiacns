@@ -104,3 +104,26 @@ $(window).on("scroll", function() {
     }
     last_scroll = scroll_top;
 })
+
+// window size responsive
+window.onload = () => {
+    let screen = window.innerWidth;
+    if(screen > 960) {
+        nav_bg.style.display = "block"
+        gnb.style.display = "flex"
+    } else {
+        nav_bg.style.display = "none"
+        gnb.style.display = "none"
+    }
+}
+
+window.onresize = function(event){
+    let innerWidth = window.innerWidth;
+    if(innerWidth > 960) {
+        nav_bg.style.display = "block"
+        gnb.style.display = "flex"
+    } else {
+        nav_bg.style.display = "none"
+        gnb.style.display = "none"
+    }
+}
