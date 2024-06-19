@@ -3,4 +3,4 @@
 https://gabiacns.netlify.app/
 <hr>
 FTP<br>
-http://ttunmill.dothome.co.kr/portfolio2/index.html
+http://ttunmill.dothome.co.kr/gabiacns/index.html
