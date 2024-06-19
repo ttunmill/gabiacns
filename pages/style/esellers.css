@@ -345,10 +345,7 @@
         width: 1200px;
         gap: 2rem;
     }
-    .sec02 .sec02_list li {
-        width: 500px;
-        aspect-ratio: unset;
-    }
+    .sec02 .sec02_list li {width: 500px;}
     /* sec03 */
     .sec03 .sec03_wrap .txt + p {width: 100%;}
     /* sec06 */
