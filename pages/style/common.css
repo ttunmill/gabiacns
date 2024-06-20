@@ -111,4 +111,8 @@ section div[class *= wrap] > .txt h3 em {
         line-height: 50px;
         min-width: 200px;
     }
+    footer .ft_wrap .customer_service .service_list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
