@@ -7,7 +7,7 @@
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/45aaaff6-aa00-4209-a23e-13ec83f6031a" width="50" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/f199d7ad-3c97-4ff3-8f22-8d4546bfeb2a" width="40" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/d80fb406-7c87-4150-83eb-af60ab915f35" width="50" height="50">
-<img src="https://github.com/ttunmill/gabiacns/assets/84768554/2cb6c757-d6ae-4c5f-bb94-ee744ccdac64" width="100" height="50">
+<img src="https://github.com/ttunmill/gabiacns/assets/84768554/9a4bbb0d-97ed-4a3e-9d31-b7cf837f43fa" width="180" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/a5c08a2c-a93b-48a3-865b-3f07eebe4299" width="100" height="50">
 
 ---
