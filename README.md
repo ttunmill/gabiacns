@@ -19,29 +19,16 @@
 ## FTP
 * http://ttunmill.dothome.co.kr/gabiacns/index.html
 ## gabiacns 와이어프레임 (메인페이지)
-* https://www.figma.com/design/KcCow2JyU1MwBAFFUT0hUr/%EC%99%80%EC%9D%B4%EC%96%B4-%ED%94%84%EB%A0%88%EC%9E%84---%EA%B0%80%EB%B9%84%EC%95%84%EC%BB%A4%EB%A8%B8%EC%8A%A4?node-id=0-1&t=N82yUp2DN16Ei0Z7-1
+* [`gabiacns 와이어프레임`](https://www.figma.com/design/KcCow2JyU1MwBAFFUT0hUr/%EC%99%80%EC%9D%B4%EC%96%B4-%ED%94%84%EB%A0%88%EC%9E%84---%EA%B0%80%EB%B9%84%EC%95%84%EC%BB%A4%EB%A8%B8%EC%8A%A4?node-id=0-1&t=N82yUp2DN16Ei0Z7-1)
 ---
 ## 🔗서브페이지 (7개)
-> 로그인페이지 (login.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/login.html
-
-> 회원가입페이지 (sign_up.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/sign_up.html
-
-> 쇼핑몰창업 -> 초간편쇼핑몰 (clickn.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/clickn.html
-
-> AI에디터 -> 상품 상세 생성 (editor.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/editor.html
-
-> 제작·운영 의뢰 -> 운영 대행 (selling.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/selling.html
-
-> 오픈마켓 판매 -> 쇼핑몰 통합관리 (esellers.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/esellers.html
-
-> 해외 진출 -> 알리바바 입점 (alibaba.html)
->> http://ttunmill.dothome.co.kr/gabiacns/pages/alibaba.html
+- [`로그인페이지 (login.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/login.html)
+- [`회원가입페이지 (sign_up.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/sign_up.html)
+- [`쇼핑몰창업 -> 초간편쇼핑몰 (clickn.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/clickn.html)
+- [`AI에디터 -> 상품 상세 생성 (editor.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/editor.html)
+- [`제작·운영 의뢰 -> 운영 대행 (selling.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/selling.html)
+- [`오픈마켓 판매 -> 쇼핑몰 통합관리 (esellers.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/esellers.html)
+- [`해외 진출 -> 알리바바 입점 (alibaba.html)`](http://ttunmill.dothome.co.kr/gabiacns/pages/alibaba.html)
 ---
 ### ⏱작업이력
 1. (24.6.11) 메인페이지 작업시작
