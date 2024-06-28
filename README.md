@@ -5,7 +5,7 @@
 * 14, 18일 작업진행x
 * 총작업기간 5일(40시간)
 ---
-## 사용 tool
+## 🔠사용 언어
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/45aaaff6-aa00-4209-a23e-13ec83f6031a" width="50" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/f199d7ad-3c97-4ff3-8f22-8d4546bfeb2a" width="40" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/d80fb406-7c87-4150-83eb-af60ab915f35" width="50" height="50">
