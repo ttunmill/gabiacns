@@ -4,6 +4,7 @@
 * (24.06.11 ~ 24.06.19)
 * 14, 18일 작업진행x
 * 총작업기간 5일(40시간)
+* 개인 100%
 ---
 ## 🔠사용 언어
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/45aaaff6-aa00-4209-a23e-13ec83f6031a" width="50" height="50">
