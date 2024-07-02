@@ -260,6 +260,7 @@
     .sec03 ul li .txt_content .meaning {
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 1rem;
     }
     .sec03 ul li .txt_content .meaning li {margin: 0;}
     .sec03 ul li > p {text-align: center;}
