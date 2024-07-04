@@ -12,6 +12,9 @@
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/d80fb406-7c87-4150-83eb-af60ab915f35" width="50" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/9a4bbb0d-97ed-4a3e-9d31-b7cf837f43fa" width="180" height="50">
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/a5c08a2c-a93b-48a3-865b-3f07eebe4299" width="100" height="50">
+<img src="https://github.com/ttunmill/sound_wave/assets/84768554/39a4bbb8-459b-49f8-8fe8-bd6224781d3e" width="50" height="50">
+<img src="https://github.com/ttunmill/sound_wave/assets/84768554/9f299794-f389-48d2-9e00-feb8460a4f27" width="120" height="50">
+<img src="https://github.com/ttunmill/sound_wave/assets/84768554/4cfff206-136b-419f-a3f7-a1e6e83880b8" width="50" height="50">
 
 ---
 
