@@ -46,3 +46,38 @@ $(window).on("scroll", function() {
     }
     last_scroll = scroll_top;
 })
+
+gsap.to(".circle1", {
+    scrollTrigger : ".circle1",
+    x : 0,
+    delay : 0.2,
+    opacity : 1,
+    yoyo: true,
+})
+gsap.to(".circle2", {
+    scrollTrigger : ".circle2",
+    x : 0,
+    delay : 0.2,
+    opacity : 1,
+    yoyo: true,
+})
+gsap.to(".circle3", {
+    scrollTrigger : ".circle3",
+    x : 0,
+    delay : 0.2,
+    opacity : 1,
+    yoyo: true,
+})
+gsap.to(".circle4", {
+    scrollTrigger : ".circle4",
+    x : 0,
+    delay : 0.2,
+    opacity : 1,
+    yoyo: true,
+})
+gsap.to(".circle5", {
+    scrollTrigger : ".circle5",
+    delay : 0.2,
+    opacity : 1,
+    yoyo: true,
+})
